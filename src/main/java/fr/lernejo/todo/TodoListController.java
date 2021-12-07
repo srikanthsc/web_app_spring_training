@@ -22,8 +22,7 @@ public class TodoListController {
     }
 
     @GetMapping("/api/todo")
-    public ArrayList<TodoEntity> getTodoList() {
-        Iterable<TodoEntity> repo = this.repository.findAll();
-        return new ArrayList<>((Collection<? extends TodoEntity>) repo);
+    public Iterable<TodoEntity> getTodoList() {
+        return this.repository.findAll();
     }
 }
