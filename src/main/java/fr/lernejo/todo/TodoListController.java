@@ -1,3 +1,5 @@
+package fr.lernejo.todo;
+
 import fr.lernejo.todo.TodoEntity;
 import fr.lernejo.todo.TodoRepository;
 import org.springframework.web.bind.annotation.GetMapping;
